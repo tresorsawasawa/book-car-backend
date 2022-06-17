@@ -27,9 +27,3 @@ class Api::V1::ReservationsController < ApplicationController
     params.require(:reservation).permit(:pick_up_day, :return_day, :pick_up_city, :return_city, :car_id, :user_id)
   end
 end
-
-
-
-
-
-
