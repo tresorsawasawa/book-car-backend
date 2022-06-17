@@ -1,10 +1,9 @@
 class Api::V1::ReservationsController < ApplicationController
+  before_action :authorize_request, only: i%[index create destroy]
+
   def index
-  end
+    @reservations = current_user.reservetions
 
-  def create
-  end
-
-  def destroy
+    render json: @reservations, status: 200
   end
 end
