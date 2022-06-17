@@ -5,6 +5,8 @@ class CreateReservations < ActiveRecord::Migration[7.0]
       t.date :return_day
       t.string :pick_up_city
       t.string :return_city
+      t.references :user, null: false, foreign_key: true
+      t.references :car, null: false, foreign_key: true
 
       t.timestamps
     end
