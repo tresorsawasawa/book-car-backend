@@ -17,6 +17,14 @@ class Api::V1::ReservationsController < ApplicationController
     end
   end
 
+  def destroy
+    reservation = User.find(@current_user.id).reservations.find(params[:id]).destroy!
+
+    render json: { data: reservation, message: ['reservation deleted'] }, status: :ok if reservation.destroyed?
+  rescue StandardError => e
+    render json: { error: 'not found', error_message: ["Reservation not found #{e}"] }, status: :not_found
+  end
+
   private
 
   def reservation_params
