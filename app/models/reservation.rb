@@ -1,6 +1,6 @@
 class Reservation < ApplicationRecord
-  belongs_to :user, class_name: 'User'
-  belongs_to :Car, class_name: 'Car'
+  belongs_to :user
+  belongs_to :car
 
   validates :pick_up_day, presence: true
   validates :return_day, presence: true
