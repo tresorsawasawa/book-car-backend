@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
- 
+  mount Rswag::Ui::Engine => '/'
+  mount Rswag::Api::Engine => '/api-docs'
 
   get '/current_user', to: 'current_user#index'
   
