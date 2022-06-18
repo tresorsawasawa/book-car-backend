@@ -3,7 +3,40 @@ openapi: 3.0.1
 info:
   title: API V1
   version: v1
+components:
+  securitySchemes:
+    bearer_auth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
 paths:
+  "/signup":
+    post:
+      summary: Sign up
+      tags:
+      - register user
+      parameters: []
+      responses:
+        '200':
+          description: sign up
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - name
+              - email
+              - password
   "/login":
     post:
       summary: Log in
@@ -44,7 +77,7 @@ paths:
         '401':
           description: authentication failed
 servers:
-- url: http://{defaultHost}
+- url: https://{defaultHost}
   variables:
     defaultHost:
       default: localhost:3001
