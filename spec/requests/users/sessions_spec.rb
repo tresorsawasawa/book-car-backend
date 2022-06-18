@@ -22,7 +22,7 @@ RSpec.describe 'Registration', type: :request do
                             password_confirmation: '1234567')
         email = @user.email
         let(:user) do
-          { user: { email: email, password: '1234567' } }
+          { user: { email:, password: '1234567' } }
         end
         run_test!
       end
