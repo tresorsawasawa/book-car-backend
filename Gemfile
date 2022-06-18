@@ -46,6 +46,9 @@ group :development do
   # gem "spring"
 end
 
+# rswag for api documentation
+gem 'rswag'
+
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'rack-cors'
