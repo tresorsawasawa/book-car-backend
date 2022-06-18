@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:each) do
-    @user = User.new(id: 6, name: 'John', email: 'user@email.com', password: 'password', password_confirmation: 'password')
+    @user = User.new(id: 6, name: 'John', email: 'user@email.com', password: 'password',
+                     password_confirmation: 'password')
   end
 
   it 'is valid if name is not nil' do
