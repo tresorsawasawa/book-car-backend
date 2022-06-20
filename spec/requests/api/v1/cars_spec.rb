@@ -54,7 +54,7 @@ RSpec.describe 'api/v1/cars', type: :request do
         end
         let(:car) do
           { car_model: 'Toyota', price_per_day: 2000, description: 'This is a car', photo: 'photo.jpeg',
-            car_type: 'jeep', transmission: 'manual' } 
+            car_type: 'jeep', transmission: 'manual' }
         end
         run_test!
       end
@@ -65,14 +65,13 @@ RSpec.describe 'api/v1/cars', type: :request do
         eyJqdGkiOiJmODkwODY3YS00NzlkLTRiNzMtOTY2OC05Y2ExNjBkNGQ3ZTciLCJmb28iOiJiYXIiLCJzdWIiOiIxNyIsInNjcCI6InVzZXIiL
         CJhdWQiOm51bGwsImlhdCI6MTY1NDU3MDgxMCwiZXhwIjoxNjU0NzUwODEwfQ.CIS8B1dDTLXxqVHrqELrnJZ6FTN--Lup6a21xAXCm8o'
         end
-        let(:car) {  { car_model: 'Toyota', price_per_day: 2000, description: 'This is a car' }  }
+        let(:car) { { car_model: 'Toyota', price_per_day: 2000, description: 'This is a car' } }
         run_test!
       end
     end
   end
 
   path '/api/v1/cars/{id}' do
-  
     parameter name: 'id', in: :path, type: :string, description: 'id'
 
     get('show car') do
@@ -132,7 +131,7 @@ RSpec.describe 'api/v1/cars', type: :request do
       end
     end
   end
-  
+
   path '/api/v1/cars/{id}' do
     parameter name: 'id', in: :path, type: :string, description: 'id'
     delete('Delete Car') do
