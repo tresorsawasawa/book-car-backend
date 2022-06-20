@@ -61,26 +61,7 @@
 <!-- About the project -->
 [App screenshot](https://example.com)
 
-## Diagrams and Screenshots
-
-### ERD Diagram
-<div align="center">
-
-||||
-|-|-------------|-|
-||![Entity Relationship Diagram](./app/assets/images/blog_app_erd.png)
-||
-</div>
-
-### Wireframe
-<div align="center">
-
-||||
-|-|-------------|-|
-||<p align="center"><img src="app/assets/images/blog_login.png" alt="Login page wireframe" width="250px"/><img src="app/assets/images/blog_root_users.png" alt="All users page wireframe"  width="250px"/><img src="app/assets/images/blog_user_page.png" alt="Single user page wireframe"  width="250px"/><img src="app/assets/images/blog_single_post.png" alt="Single user page wireframe"  width="250px"/></p>||
-
-</div>
-
+##  Screenshots
 
 ## Description 🏗️
 This is a car rental website that allows you to view  a variety of cars and book them at different rates.
@@ -231,6 +212,23 @@ A tab should be opened in your default browser at:
 ```bash
 localhost:3000
 ```
+Create User in documentation:
+
+```bash
+{ "user":
+  "name": "string",
+  "email": "string",
+  "password": "string"
+}}
+```
+Login User in documentation:
+
+```bash
+{ "user":
+  "email": "string",
+  "password": "string"
+}}
+```
 
 <!-- ROADMAP -->
 ### Roadmap
@@ -267,7 +265,9 @@ localhost:3000
 
 | 👤 vudej  |
 |---|
-| Input your details here  |
+| <a target="_blank" href="https://github.com/VuDej"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/dejan-vujovic/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/DejanVuj"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+|
+
 
 | 👤 Abdulfatai Badara  |
 |---|
@@ -277,15 +277,18 @@ localhost:3000
 
 | 👤 Vahan  |
 |---|
-| Input your details here  |
+| <a target="_blank" href="https://github.com/Gegardus"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/vahan-khachvankian"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/Gegardus"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+|
 
 | 👤 Tresor  |
 |---|
-| Input your details here  |
+| <a target="_blank" href="https://github.com/tresorsawasawa"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/tresor-sawasawa/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/TresorSawasaw"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>  
+|
 
 | 👤 francis  |
 |---|
-| Input your details here  |
+| <a target="_blank" href="https://github.com/githubhandle"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://linkedin.com/in/linkedinhandle"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/twitterhandle"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>  
+|
 
 </div>
 
