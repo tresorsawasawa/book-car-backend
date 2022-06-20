@@ -62,6 +62,7 @@
 [App screenshot](https://example.com)
 
 ##  Screenshots
+![Screenshot](app/assets/screenshot.png)
 
 ## Description 🏗️
 This is a car rental website that allows you to view  a variety of cars and book them at different rates.
