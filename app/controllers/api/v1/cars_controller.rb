@@ -29,6 +29,6 @@ class Api::V1::CarsController < ApplicationController
   end
 
   def car_params
-    params.require(:car).permit(:car_model, :price_per_day, :description, :photo, :car_type, :transmission)
+    params.require(:car).permit(:car_model, :price_per_day, :description, :photo, :car_type, :transmission, :user_id)
   end
 end
