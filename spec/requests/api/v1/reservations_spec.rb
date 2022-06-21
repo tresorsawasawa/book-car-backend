@@ -13,9 +13,11 @@ RSpec.describe 'api/v1/reservations', type: :request do
           pick_up_day: { type: 'string', format: 'date', required: true },
           return_day: { type: 'string', format: 'date', required: true },
           pick_up_city: { type: :string },
-          return_city: { type: :string }
+          return_city: { type: :string },
+          user_id: { type: :integer },
+          car_id: { type: :integer }
         },
-        required: %w[pick_up_day return_day pick_up_city return_city]
+        required: %w[pick_up_day return_day pick_up_city return_city user_id car_id]
       }
 
       response '401', 'reservation created' do
