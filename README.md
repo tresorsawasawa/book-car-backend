@@ -19,7 +19,7 @@
   <a href="https://github.com/VuDej/final-capstone-back-end#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/VuDej/final-capstone-back-end">View Demo</a>
+    <a href="https://final-capstone-back.herokuapp.com/index.html">View Demo</a>
     ·
     <a href="https://github.com/VuDej/final-capstone-back-end/issues">Report Bug</a>
     ·
