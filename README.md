@@ -35,6 +35,7 @@
   - [Frontend Repository Link](#frontend-repository-link)
   - [Screenshots](#screenshots)
   - [Description 🏗️](#description-️)
+  - [Live Demo](#live-demo)
   - [Getting Started 🏁](#getting-started-)
     - [Prerequisites and Dependencies 📜](#prerequisites-and-dependencies-)
       - [Setting Up PostgreSQL](#setting-up-postgresql)
@@ -64,6 +65,10 @@
 This is a car rental website that allows you to view  a variety of cars and book them at different rates.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Live Demo
+
+(In progress)
 
 ## Getting Started 🏁
 
