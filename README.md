@@ -164,6 +164,13 @@ You can paste or type it on url bar
 
 ## Run tests
 
+Make sure you have installed gems with:
+
+ ```bash
+  bundle install
+```
+Then run all the tests with:
+
 ```bash
 rspec spec
 ```
