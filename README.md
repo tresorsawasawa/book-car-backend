@@ -14,7 +14,7 @@
     <br />
 
 ## Frontend Repository Link
-<a href="https://github.com/Gegardus/book-a-car-frontend/blob/dev/README.md">Book A Car Frontend</a>
+<a href="https://github.com/Gegardus/book-a-car-frontend">Book A Car Frontend</a>
 
   <a href="https://github.com/VuDej/final-capstone-back-end#readme"><strong>Explore the docs »</strong></a>
     <br />
