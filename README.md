@@ -189,7 +189,7 @@ You can paste or type it on url bar
 <!-- View frontend -->
 Clone the Repo
 ```bash
-https://github.com/Gegardus/book-a-car-frontend/blob/dev/README.md
+git clone https://github.com/VuDej/final-capstone-back-end.git
 ```
 Navigate into it with:
 
