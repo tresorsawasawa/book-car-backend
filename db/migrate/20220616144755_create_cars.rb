@@ -3,7 +3,7 @@ class CreateCars < ActiveRecord::Migration[7.0]
     create_table :cars do |t|
       t.string :model
       t.string :car_type
-      t.integer :price_per_day
+      t.decimal :price_per_day
       t.string :transmission
       t.text :description
       t.string :photo
