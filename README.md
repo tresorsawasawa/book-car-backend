@@ -33,22 +33,18 @@
 
 - [Rent A Car](#rent-a-car)
   - [Frontend Repository Link](#frontend-repository-link)
-  - [Diagrams and Screenshots](#diagrams-and-screenshots)
-    - [ERD Diagram](#erd-diagram)
-    - [Wireframe](#wireframe)
+  - [Screenshots](#screenshots)
   - [Description 🏗️](#description-️)
   - [Getting Started 🏁](#getting-started-)
     - [Prerequisites and Dependencies 📜](#prerequisites-and-dependencies-)
-    - [Setup](#setup)
       - [Setting Up PostgreSQL](#setting-up-postgresql)
     - [Clone this repository](#clone-this-repository)
-    - [Move into the directory with](#move-into-the-directory-with)
-    - [Install linter](#install-linter)
-    - [Create the database](#create-the-database)
-    - [Install linter](#install-linter-1)
+    - [Move into the cloned directory with](#move-into-the-cloned-directory-with)
+  - [Setup](#setup)
     - [Run linter](#run-linter)
       - [Auto-correct](#auto-correct)
     - [Run Project](#run-project)
+  - [Run tests](#run-tests)
     - [Roadmap](#roadmap)
   - [Built With 🔨](#built-with-)
   - [Authors ✍️](#authors-️)
@@ -91,7 +87,6 @@ You will be needing:
   https://www.postgresql.org/download/
   ```
 
-### Setup
 
 #### Setting Up PostgreSQL
 
@@ -106,19 +101,21 @@ You will be needing:
 ```bash
 git clone https://github.com/VuDej/final-capstone-back-end.git
 ```
-### Move into the directory with
+### Move into the cloned directory with
 
   ```bash
   cd final-capstone-back-end
   ```
 
-### Install linter
+## Setup
+
+Install gems with:
 
   ```bash
   bundle install
   ```
 
-### Create the database
+Setup the database with:
 ```bash
 rails db:create
 ```
@@ -128,32 +125,15 @@ rails db:create
 rake db:create
 ```
 
-### Install linter
-
-For Ruby and Rails run:
-  ```bash
-  bundle install
-  ```
-
-For stylelint:
-
-  ```bash
-  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-  ```
-
 ### Run linter
-For Ruby
+
 ```bash
 rubocop .
-```
-For Stylelint:
-```bash
-npx stylelint "**/*.{css,scss}"
 ```
 
 #### Auto-correct
 
-In auto-correct mode, RuboCop and stylelint will try to automatically fix offenses:
+In auto-correct mode, RuboCop linters offenses will be automatically fixed:
 
 For rubocop:
 ```bash
@@ -164,72 +144,31 @@ rubocop -A
 rubocop --auto-correct-all
 ```
 
-For stylelint:
-
-```bash
-npx stylelint "**/*.{css,scss}" --fix
-```
 ### Run Project
+
+Start server with:
+
 ```bash
 rails s
 ```
 <div align="center">OR</div>
 
 ```bash
-rails server -p 3005 
+rails server -p 3001 
 ```
 This will start a server at:
 ```bash
-localhost:3005
+localhost:3001
 ```
 You can paste or type it on url bar
 
+## Run tests
+
+```bash
+rspec spec
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- View frontend -->
-Clone the Repo
-```bash
-git clone https://github.com/VuDej/final-capstone-back-end.git
-```
-Navigate into it with:
-
-```bash
-cd book-a-car-frontend
-```
-
-Run:
-
-```bash
-npm install
-```
-Make sure the server for the frontend and backend are running. TO run the server for the backend run:
-
-```bash
-npm start
-```
-
-A tab should be opened in your default browser at:
-
-```bash
-localhost:3000
-```
-Create User in documentation:
-
-```bash
-{ "user":
-  "name": "string",
-  "email": "string",
-  "password": "string"
-}}
-```
-Login User in documentation:
-
-```bash
-{ "user":
-  "email": "string",
-  "password": "string"
-}}
-```
 
 <!-- ROADMAP -->
 ### Roadmap
@@ -281,7 +220,7 @@ Login User in documentation:
 | <a target="_blank" href="https://github.com/Gegardus"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/vahan-khachvankian"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/Gegardus"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
 |
 
-| 👤 Tresor  |
+| 👤 Tresor Sawasawa |
 |---|
 | <a target="_blank" href="https://github.com/tresorsawasawa"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/tresor-sawasawa/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/TresorSawasaw"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>  
 |
