@@ -15,7 +15,7 @@ class Api::V1::CarsController < ApplicationController
     @car = current_user.cars.new(car_params)
 
     if @car.save
-      render :create, status: 201
+      render json: { message: 'Car has been successfully created' }
     else
       render json: @car.errors, status: 422
     end
@@ -23,10 +23,14 @@ class Api::V1::CarsController < ApplicationController
 
   def destroy
     @car = Car.find(params[:id])
-    @car.destroy
-
-    head 204
+    if @car.destroy
+      render json: { message: 'Car has been successfully deleted' }
+    else
+      render json: @reservation.errors, status: :unprocessable_entity
+    end
   end
+
+  private
 
   def car_params
     params.require(:car).permit(:car_model, :price_per_day, :description, :photo, :car_type, :transmission, :user_id)

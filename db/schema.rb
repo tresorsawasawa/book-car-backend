@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_16_223522) do
 
   create_table "cars", force: :cascade do |t|
     t.string "car_type"
-    t.integer "price_per_day"
+    t.decimal "price_per_day"
     t.string "transmission"
     t.text "description"
     t.string "photo"
